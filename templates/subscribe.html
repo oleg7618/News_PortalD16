@@ -1,0 +1,13 @@
+{% extends 'default.html' %}
+
+{% block title %} Subscribe {% endblock title %}
+
+{% block content %}
+<h3> Оформить подписку на категорию </h3>
+<hr>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Подписаться">
+</form>
+{% endblock content %}

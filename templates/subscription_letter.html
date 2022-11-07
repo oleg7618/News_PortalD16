@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription letter</title>
+</head>
+<body>
+<h2>{{ person.subscriber }} Новая статья в вашей любимой категории {{cat}}!</h2>
+    <p> {{post.post_text}} </p>
+<p> Ссылка на статью: <a href="http://127.0.0.1:8000{% url 'post_detail' post.id %}">тут</a></p>
+</body>
+</html>
